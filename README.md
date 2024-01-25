@@ -1,2 +1,2 @@
 # lina-python.github.io
-chemistry
+- Классификация неорганических веществ;
