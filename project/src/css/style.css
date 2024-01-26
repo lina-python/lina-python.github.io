@@ -1,0 +1,10 @@
+div
+    {width: 700px; /* Ширина слоя */
+    padding: 5px; /* Поля вокруг текста */
+    margin-left: 5%; /* Отступ слева */
+    margin-right: 10%; /* Отступ справа */}
+h3{margin-left: 5%; /* Отступ слева */
+    margin-right: 10%; /* Отступ справа */}
+.text{width: 800px;
+margin-left: 10%;
+margin-right: 5%;}
