@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,44 +11,72 @@
     <div class="divider"></div>
     <div class="container">
         <div class="item">
-            <label>
-                <input type="checkbox" />
-                <div class="flip-card">
-                    <div class="front">
-                        <p class="formula">H<sub>2</sub>SO<sub>4</sub></p>
-                    </div>
-                    <div class="back">
-                        <p class="name">Серная кислота</p>
-                    </div>
+            <div class="scene">
+                <div class="card">
+                    <div class="card__face card__face--front">front</div>
+                    <div class="card__face card__face--back">back</div>
                 </div>
-            </label>
+            </div>
         </div>
         <div class="item">
-            <label>
-                <input type="checkbox" />
-                <div class="flip-card">
-                    <div class="front">
-                        <p class="formula">H<sub>2</sub>CO<sub>3</sub></p>
-                    </div>
-                    <div class="back">
-                        <p class="name">Угольная кислота</p>
-                    </div>
+            <div class="scene">
+                <div class="card">
+                    <div class="card__face card__face--front">front</div>
+                    <div class="card__face card__face--back">back</div>
                 </div>
-            </label>
+            </div>
         </div>
         <div class="item">
-            <label>
-                <input type="checkbox" />
-                <div class="flip-card">
-                    <div class="front">
-                        <p class="formula">H<sub>3</sub>PO<sub>4</sub></p>
-                    </div>
-                    <div class="back">
-                        <p class="name">Фосфорная кислота</p>
-                    </div>
+            <div class="scene">
+                <div class="card">
+                    <div class="card__face card__face--front">front</div>
+                    <div class="card__face card__face--back">back</div>
                 </div>
-            </label>
+            </div>
         </div>
+        <div class="item">
+            <div class="scene">
+                <div class="card">
+                    <div class="card__face card__face--front">front</div>
+                    <div class="card__face card__face--back">back</div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="scene">
+                <div class="card">
+                    <div class="card__face card__face--front">front</div>
+                    <div class="card__face card__face--back">back</div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="scene">
+                <div class="card">
+                    <div class="card__face card__face--front">front</div>
+                    <div class="card__face card__face--back">back</div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="scene">
+                <div class="card">
+                    <div class="card__face card__face--front">front</div>
+                    <div class="card__face card__face--back">back</div>
+                </div>
+            </div>
+        </div>
+        
     </div>
+    
+    <script>
+	    var cards = document.querySelectorAll('.card');
+
+        [...cards].forEach((card)=>{
+        card.addEventListener( 'click', function() {
+        card.classList.toggle('is-flipped');
+        });
+        });
+	</script>
 </body>
 </html>
