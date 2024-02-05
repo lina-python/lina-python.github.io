@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Классификация неорганических веществ</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Классификация неорганических веществ</h1>
+    <div class="divider"></div>
+    <div class="container">
+        <div class="item">
+            <div class="scene">
+                <div class="card">
+                    <div class="card__face card__face--front">CaO</div>
+                    <div class="card__face card__face--back">Основный оксид</div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="scene">
+                <div class="card">
+                    <div class="card__face card__face--front">SO<sub>3</sub></div>
+                    <div class="card__face card__face--back">Кислотный оксид</div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="scene">
+                <div class="card">
+                    <div class="card__face card__face--front">Fe(OH)<sub>2</sub></div>
+                    <div class="card__face card__face--back">Основание</div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="scene">
+                <div class="card">
+                    <div class="card__face card__face--front">HCl</div>
+                    <div class="card__face card__face--back">Кислота</div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="scene">
+                <div class="card">
+                    <div class="card__face card__face--front">BeO</div>
+                    <div class="card__face card__face--back">Амфотерный оксид</div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="scene">
+                <div class="card">
+                    <div class="card__face card__face--front">Al(OH)<sub>3</sub></div>
+                    <div class="card__face card__face--back">Амфотерный гидроксид</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+	    var cards = document.querySelectorAll('.card');
+
+        [...cards].forEach((card)=>{
+        card.addEventListener( 'click', function() {
+        card.classList.toggle('is-flipped');ы
+        });
+        });
+	</script>
+</body>
+</html>
