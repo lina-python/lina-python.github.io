@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 25px;
+    }
+h1 {
+    text-align: center;
+}
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin-bottom: 30px;
+}
+
+p {
+    text-align: center;
+}
+
+.scene {
+    width: 400px;
+    height: 200px;
+    perspective: 600px;
+    
+    -moz-perspective: 600px;
+    -ms-perspective: 600px;
+    -webkit-perspective: 600px;
+    -o-perspective: 600px;
+}
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.75s;
+    
+    -moz-transition: transform 0.65s;
+    -ms-transition: transform 0.65s;
+    -webkit-transition: transform 0.65s;
+    -o-transition: transform 0.65s;
+
+    transform-style: preserve-3d;
+    
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+
+    cursor: pointer;
+    
+}
+.card__face {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(210, 238, 254);
+    border-radius: 17px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+}
+
+.card__face--back {
+    transform: rotateY(180deg);
+    
+    -moz-transform: rotateY( 180deg );
+    -ms-transform: rotateY( 180deg );
+    -webkit-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+}
+.card.is-flipped {
+    transform: rotateY(180deg);
+
+    -moz-transform: rotateY( 180deg );
+    -ms-transform: rotateY( 180deg );
+    -webkit-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 30px;
+}
+
+@media (min-width: 1380px) {
+    .container {
+        padding: 50px;
+    }
+}
+@media (max-width: 600px) {
+    .scene {
+        width: 250px;
+        height: 130px;
+    }
+    body {
+        font-size: 20px;
+    }
+    .card__face {
+        font-size: 20px;
+    }
+}

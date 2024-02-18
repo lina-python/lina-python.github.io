@@ -1,0 +1,31 @@
+body {
+    padding: 45px;
+    font-size: 25px;
+}
+.formula {
+    text-align: center;
+    font-style: italic;
+}
+.red-text {
+    color: #CC0000;
+}
+.sub-list {
+    margin-bottom: 30px;
+}
+.example {
+    font-style: italic;
+    margin-bottom: 0;
+}
+.examples {
+    margin-top: 5px;
+    list-style-type: circle;
+}
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color: black;
+}
+.names p {
+    margin: 2px;
+    font-style: italic;
+}
