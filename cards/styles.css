@@ -1,9 +1,10 @@
-* {
+*{
     box-sizing: border-box;
 }
+
 body {
     font-size: 25px;
-}
+    }
 h1 {
     text-align: center;
 }
@@ -13,6 +14,11 @@ h1 {
     background-color: black;
     margin-bottom: 30px;
 }
+
+p {
+    text-align: center;
+}
+
 .scene {
     width: 400px;
     height: 200px;
@@ -48,7 +54,7 @@ h1 {
     position: absolute;
     height: 100%;
     width: 100%;
-    background: #CCE5FF;
+    background: rgb(210, 238, 254);
     border-radius: 17px;
     font-size: 30px;
     display: flex;
