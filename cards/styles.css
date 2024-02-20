@@ -2,10 +2,37 @@
     box-sizing: border-box;
 }
 body {
+    margin-top: 60px;
     font-size: 25px;
+   /*background-image: url(img/background1.jpg);
+    background-size: auto 100%;
+    opacity: 70%; */
+    background: linear-gradient(70deg, #4682B4, #E0E0E0) fixed;
+}
+
+.box {
+    padding-top: 8px;
+    text-align: center;
+    opacity: .8;
+    background-color: #060345;
+    height: 50px;
+    position: fixed;
+    left: 0%;
+    width: 100%;
+    margin-bottom: 30px;
+    top: 0;
+    z-index:100;
+}
+
+.link{
+    font-style: italic;
+    color: whitesmoke;
+    opacity: .9;
+    text-decoration: none;
 }
 h1 {
     text-align: center;
+    color:#ECF5FF;
 }
 .divider {
     width: 100%;
@@ -102,5 +129,8 @@ h1 {
     }
     .card__face {
         font-size: 20px;
+    }
+    h1 {
+        font-size: 30px;
     }
 }
